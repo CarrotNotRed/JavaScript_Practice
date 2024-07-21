@@ -7,15 +7,16 @@
 
 let arr1 = [1, 12, 16, 28, 34];
 let arr2 = [1, 13, 16, 27, 99];
-let arr = arr1.concat(arr2);
+let arr = mergeArrays(arr1, arr2);
 sortArray(arr);
 console.log(arr);
 
 function mergeArrays(arr1, arr2){
+    let arr = arr1;
     for(let i = 0; i < arr2.length; i++){
-        arr1.push(arr2[i]);
+        arr.push(arr2[i]);
     }
-    return arr1;
+    return arr;
 }
 
 function sortArray(arr) {
