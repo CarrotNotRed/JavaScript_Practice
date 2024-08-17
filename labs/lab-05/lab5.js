@@ -13,7 +13,7 @@ const readline = require(`readline-sync`);
  */
 
 function countWords(sentence) {
-    let words = sentence.toLowerCase().replace(/,/g, '').replace(/\./g, '').split(/\s+/);
+    let words = sentence.toLowerCase().replaceAll(",", "").split(" ");
     let wordCounts = {};
   
     for (let word of words) {
