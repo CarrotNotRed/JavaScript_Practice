@@ -3,7 +3,7 @@ const readline = require(`readline-sync`);
  * url: https://jsonplaceholder.typicode.com
  * Library: fetch
  * GET	/posts
- * Please using PROMISE and thenable to solve this
+ * Please using PROMISE and aync await to solve this
  * Allow user to input an userid and postId, print out that post content
  * Print all posts for that user
  */
